@@ -1,0 +1,39 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<link rel='stylesheet' href='/stylesheets/dashboards.css' />
+
+<h1>Patients Details</h1>
+
+
+<br><br>
+<table id="PatientDetails">
+  <tr>
+    <th>ID</th>
+    {{!-- <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Address</th> --}}
+    <th>Consulting Hospital</th>
+    <th>Consulting Doctor Id</th>
+    <th>Observation</th>
+    <th>Disease</th>
+    <th>Medicine</th>
+  </tr>
+  {{#listing}}
+  <tr class="">
+    <td>{{id}}</td>
+    {{!-- <td>{{name}}</td>
+    <td>{{age}}</td>
+    <td>{{gender}}</td>
+    <td>{{paddress}}</td> --}}
+    <td>{{hospital}}</td>
+    <td>{{doctor}}</td>
+    <td>{{observation}}</td>
+    <td>{{disease}}</td>
+    <td>{{medicine}}</td>
+  </tr>
+  {{/listing}}
+</table>
+
+
+<a class="nav-link" id="home" href="/">Home </a>
+

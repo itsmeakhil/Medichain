@@ -1,0 +1,64 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<link rel='stylesheet' href='/stylesheets/dashboards.css' />
+<h1>MediChain</h1>
+<div class="form-modal">
+
+    <div class="form-toggle">
+        <button id="man-toggle">Patient Form</button>
+    </div>
+
+    <div id="man-form">
+        <form id="manform">
+            {{!-- <input type="text" id="docPrivKey" placeholder="Hospital private key" /> --}}
+            <table>
+                <tr>
+                    <td><input id="PatientId" type="text" placeholder="Patient Id" /></td>
+                    <td><input id="PatientName" type="text" placeholder="Name" /></td>
+                </tr>
+                <tr>
+                    <td><input id="PatientAge" type="text" placeholder="Age" /></td>
+                    <td><input id="PatientGender" type="text" placeholder="Gender" /></td>
+                </tr>
+                <tr>
+                    <td><input id="PatientAddress" type="text" placeholder="Address" /></td>
+                    <td><input id="ConsultingHospital" type="text" placeholder="Hospital" /></td>
+                </tr>
+                <tr>
+                    <td><input id="ConsultingDoctor" type="text" placeholder="Doctor Id" /></td>
+                    <td><input id="PatientObservation" type="text" placeholder="Observation" /></td>
+                </tr>
+                <tr>
+                    <td><input id="PatientDisease" type="text" placeholder="Disease" /></td>
+                    <td><input id="PrescribedMedicine" type="text" placeholder="Medicine" /></td>
+                </tr>
+            </table>
+            <button type="button" onclick="addPatients(event)" class="btn login">Add Patient details</button>
+
+        </form>
+
+    </div>
+
+    
+    <a class="nav-link" id="list" href="/dhome">
+        <h3>List Patient Details</h3>
+        
+    </a>
+<button type="button" onclick="logout()" class="btn">Logout</button>
+
+</div>
+
+
+<script>
+
+    function toggleMan() {
+        document.getElementById('depform').reset();
+        document.getElementById("man-toggle").style.backgroundColor = "#33cc99";
+        document.getElementById("man-toggle").style.color = "#fff";
+        document.getElementById("dep-toggle").style.backgroundColor = "#fff";
+        document.getElementById("dep-toggle").style.color = "#222";
+        document.getElementById("dep-form").style.display = "none";
+        document.getElementById("man-form").style.display = "block";
+    }
+
+</script>
+<script src='/javascripts/main.js'></script>

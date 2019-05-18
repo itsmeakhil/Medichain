@@ -1,0 +1,26 @@
+<link rel='stylesheet' href='/stylesheets/login.css' />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<h1>Search Here...!</h1>
+<div class="form-modal">
+    <div class="form-toggle">
+        <button id="man-toggle">Patient Details</button>
+    </div>
+    <div id="man-form">
+        <form id="manform" method="POST" action="/listPatient">
+            <input type="text" name="dId" placeholder="Enter Doctors Id" />
+            <input type="text" name="sId" placeholder="Enter Your Id" />
+            
+            <table>
+                <tr>
+                    <td ><input type="submit" value = "Search" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<a class="nav-link" id="list" href="/">
+        <h3>Home</h3>
+        
+    </a>
+<script src='/javascripts/main.js'></script>

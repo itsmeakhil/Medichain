@@ -1,0 +1,28 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<link rel='stylesheet' href='/stylesheets/login.css' />
+
+
+<link rel='stylesheet' href='/stylesheets/login.css' />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<h1>Doctor Search Here...!</h1>
+<div class="form-modal">
+    <div class="form-toggle">
+        <button id="man-toggle">Patient Details</button>
+    </div>
+    <div id="man-form">
+        <form id="manform" method="POST" action="/dlistPatient">
+            <input type="text" name="sId" placeholder="Enter Doctors Id" />
+            
+            <table>
+                <tr>
+                    <td ><input type="submit" value = "Search" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<a class="nav-link" id="list" href="/dhome">
+    Back to Dashboard  
+</a>
+<script src='/javascripts/main.js'></script>

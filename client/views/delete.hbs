@@ -1,0 +1,29 @@
+<link rel='stylesheet' href='/stylesheets/login.css' />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<h1>Delete Here...!</h1>
+<div class="form-modal">
+    <div class="form-toggle">
+        <button id="man-toggle">Delete Patient Details</button>
+    </div>
+    <div id="man-form">
+        <form id="manform">
+            <input type="text" id="dId" placeholder="Enter Doctors Id" />
+            <input type="text" id="sId" placeholder="Enter Your Id" />
+            
+            <table>
+                <tr>
+                    <td ><input type="submit" value = "Delete" onclick="deletefun()" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<a class="nav-link" id="list" href="/dhome">
+        <h3>Home</h3>
+        
+    </a>
+
+<button type="button" onclick="logout()" class="btn">Logout</button>
+
+<script src='/javascripts/main.js'></script>
